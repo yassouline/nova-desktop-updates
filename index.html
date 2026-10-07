@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Nova pour ordinateur</title>
+<link rel="icon" href="icon.png">
+<style>
+  :root {
+    --bg: #05070a;
+    --card: #0f141b;
+    --line: #1c2430;
+    --text: #eef1f5;
+    --muted: #9aa4b2;
+    --accent: #3d8bff;
+    --accent-press: #2f74db;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+  header img { width: 56px; height: 56px; border-radius: 14px; }
+  h1 { font-size: 30px; margin: 0; letter-spacing: -0.01em; }
+  .lead { color: var(--muted); margin: 6px 0 28px; }
+  .downloads { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .download {
+    display: block;
+    padding: 18px 20px;
+    border-radius: 14px;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+  }
+  .download:hover { background: var(--accent-press); }
+  .download strong { display: block; font-size: 19px; }
+  .download span { display: block; font-size: 14px; opacity: 0.85; }
+  .phone-note { color: var(--muted); font-size: 15px; margin: 12px 0 0; }
+  section {
+    margin-top: 28px;
+    padding: 22px 22px 8px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--card);
+  }
+  h2 { font-size: 21px; margin: 0 0 10px; }
+  ol, ul { padding-left: 22px; margin: 0 0 14px; }
+  li { margin: 6px 0; }
+  .tip { color: var(--muted); font-size: 15px; }
+  kbd {
+    display: inline-block;
+    padding: 1px 7px;
+    border: 1px solid var(--line);
+    border-bottom-width: 2px;
+    border-radius: 6px;
+    background: #161d27;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  footer { margin-top: 32px; color: var(--muted); font-size: 14px; text-align: center; }
+  @media (max-width: 560px) {
+    .downloads { grid-template-columns: 1fr; }
+    h1 { font-size: 26px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="">
+    <h1>Nova pour ordinateur</h1>
+  </header>
+  <p class="lead">Tes chaînes, films et séries Nova sur ton Mac ou ton PC, avec la même interface que sur la télé.</p>
+
+  <div class="downloads">
+    <a class="download" href="https://github.com/yassouline/nova-desktop-updates/releases/latest/download/Nova-Mac.dmg">
+      <strong>Télécharger pour Mac</strong>
+      <span>macOS 11 ou plus récent · environ 250 Mo</span>
+    </a>
+    <a class="download" href="https://github.com/yassouline/nova-desktop-updates/releases/latest/download/Nova-Windows.exe">
+      <strong>Télécharger pour Windows</strong>
+      <span>Windows 10 ou 11 · environ 130 Mo</span>
+    </a>
+  </div>
+  <p class="phone-note">Tu lis cette page sur ton téléphone ? Ouvre-la plutôt sur l’ordinateur où tu veux installer Nova.</p>
+
+  <section>
+    <h2>Installer sur Mac</h2>
+    <ol>
+      <li>Clique sur <strong>Télécharger pour Mac</strong>.</li>
+      <li>Ouvre le fichier <strong>Nova-Mac.dmg</strong> (dans Téléchargements).</li>
+      <li>Dans la fenêtre qui s’ouvre, fais glisser l’icône <strong>Nova</strong> sur le dossier <strong>Applications</strong>.</li>
+      <li>Ouvre <strong>Nova</strong> depuis le Launchpad ou le dossier Applications. Si le Mac demande s’il faut l’ouvrir, clique sur <strong>Ouvrir</strong>.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Installer sur Windows</h2>
+    <ol>
+      <li>Clique sur <strong>Télécharger pour Windows</strong>. Si le navigateur dit que le fichier n’est pas souvent téléchargé, choisis <strong>Conserver</strong>.</li>
+      <li>Ouvre le fichier <strong>Nova-Windows.exe</strong>.</li>
+      <li>Si Windows affiche « Windows a protégé votre ordinateur », clique sur <strong>Informations complémentaires</strong>, puis sur <strong>Exécuter quand même</strong>. C’est normal pour une nouvelle application, et ça n’arrive qu’une fois.</li>
+      <li>Nova s’installe toute seule et s’ouvre. Ensuite, tu la retrouves sur le bureau et dans le menu Démarrer.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Se connecter</h2>
+    <ol>
+      <li>Au premier lancement, Nova te demande ton compte.</li>
+      <li>Le plus simple : colle le lien que tu as reçu avec ton abonnement dans <strong>URL M3U (connexion automatique)</strong>. Sinon, remplis <strong>Serveur</strong>, <strong>Identifiant</strong> et <strong>Mot de passe</strong>.</li>
+      <li>Donne un nom au compte (par exemple « Maison »), puis clique sur <strong>Enregistrer et connecter</strong>.</li>
+    </ol>
+    <p class="tip">Nova retient ton compte : tu n’auras plus à le taper.</p>
+  </section>
+
+  <section>
+    <h2>Utiliser Nova</h2>
+    <ul>
+      <li><strong>Souris ou trackpad</strong> : fais défiler les listes et clique sur une chaîne, un film ou une série.</li>
+      <li><strong>Clavier</strong> : les flèches et <kbd>Entrée</kbd> marchent comme la télécommande, <kbd>Échap</kbd> revient en arrière.</li>
+      <li><kbd>Espace</kbd> : pause et lecture.</li>
+      <li><strong>Direct en plein écran</strong> : amène la souris sur le bord gauche pour voir la liste des chaînes.</li>
+      <li><strong>Double-clic</strong> sur l’image : sortir du plein écran.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Nouvelle version</h2>
+    <p>Reviens sur cette page et télécharge Nova à nouveau, puis installe-la par-dessus. Ton compte et tes favoris sont gardés.</p>
+  </section>
+
+  <footer>Nova · version 1.0.0</footer>
+</main>
+</body>
+</html>
